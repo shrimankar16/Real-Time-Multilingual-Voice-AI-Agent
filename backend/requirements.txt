@@ -1,0 +1,29 @@
+# Backend dependencies
+fastapi>=0.110.0
+uvicorn[standard]>=0.29.0
+sqlalchemy>=2.0
+python-multipart>=0.0.9
+
+# LLM Agent
+langchain>=0.3.0
+langchain-groq>=0.2.0
+langchain-core>=0.3.0
+
+# Speech-to-Text
+faster-whisper>=1.0.0
+
+# Text-to-Speech
+edge-tts>=6.1.0
+
+# Language detection & translation
+langdetect>=1.0.9
+deep-translator>=1.11.0
+
+# Redis (optional – graceful fallback)
+redis>=5.0.0
+
+# Celery (optional – for campaign scheduling)
+celery[redis]>=5.3.0
+
+# Utilities
+python-dotenv>=1.0.0
