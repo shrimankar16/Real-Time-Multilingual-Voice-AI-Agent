@@ -1,13 +1,19 @@
-# Dependencies
-node_modules/
+# Python
 __pycache__/
-*.pyc
-*.pyo
+*.py[cod]
+*$py.class
+*.so
+.Python
 venv/
-.venv/
+env/
+ENV/
+*.egg-info/
+dist/
+build/
 
 # Database
 *.db
+*.sqlite
 *.sqlite3
 
 # Environment
@@ -20,16 +26,17 @@ venv/
 *.swp
 *.swo
 
-# Build
-.next/
-out/
-dist/
-build/
-
 # OS
 .DS_Store
 Thumbs.db
 
-# Whisper models (large)
-*.bin
-*.pt
+# Logs
+*.log
+
+# Next.js
+frontend/nextjs-ui/.next/
+frontend/nextjs-ui/out/
+frontend/nextjs-ui/node_modules/
+
+# Redis
+dump.rdb

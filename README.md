@@ -56,8 +56,43 @@ A real-time voice AI agent that helps patients book, reschedule, and cancel doct
 ### Prerequisites
 - Python 3.11+
 - Node.js 18+
-- Groq API key (free)
+- Groq API key (free) - Get it from https://console.groq.com
 - Redis (optional — system works without it)
+
+### Quick Start (Windows)
+
+1. **Get your Groq API key** from https://console.groq.com (it's free!)
+
+2. **Configure environment:**
+   ```bash
+   # The .env file is already created, just add your API key
+   # Edit .env and replace 'your_groq_api_key_here' with your actual key
+   ```
+
+3. **Run everything with one command:**
+   ```bash
+   start-all.bat
+   ```
+   This will open two terminal windows and start both backend and frontend.
+
+4. **Open your browser:**
+   - Frontend: http://localhost:3000
+   - Backend API: http://localhost:8000
+   - API Docs: http://localhost:8000/docs
+
+### Manual Setup
+
+If you prefer to start services individually:
+
+**Backend:**
+```bash
+start-backend.bat
+```
+
+**Frontend:**
+```bash
+start-frontend.bat
+```
 
 ### 1. Clone & Configure
 
